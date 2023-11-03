@@ -1,0 +1,145 @@
+
+.element-avec-curseur-personnalise2 {
+    cursor: url('../media/tournevis.png'), pointer !important ;
+}
+
+/* Media Queries for Surface Pro 7 */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+   
+        .logo {
+           
+          .imglogo{
+            
+            margin-top: 40px;
+            margin-left: 280px;
+           }}
+        
+    .element-avec-curseur-personnalise2 {
+        cursor: url('../media/tournevis.png'), pointer !important ;
+       
+        .navigation-list {
+            width: 550px;
+            display: flex;
+            margin-top: 140px;
+            margin-left: -230px;
+        }
+
+        
+    } 
+      
+   
+}
+
+// Media Query for iPad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .containerNav {
+        flex-direction: column; 
+        align-items: center; 
+
+        .imglogo {
+            width: 100%; 
+
+        .lienNav {
+            margin-left: 0; 
+            margin-top: 10px; 
+        }
+
+        .navigation-list {
+            margin-top: 10px;
+            flex-direction: column; 
+            align-items: center; 
+
+            .navigation-item a {
+                margin-right: 0;
+                margin-bottom: 10px; 
+            }
+        }
+    }}}
+
+    // Media Query for iPhone
+@media only screen and (max-width: 480px) {
+    .containerNav {
+        flex-direction: column; // Change to column layout on iPhone
+        align-items: center; // Center items in column layout
+
+        .imglogo {
+            width: 100%; // Make logo take full width
+        }
+
+        .lienNav {
+            margin-left: 0; // Remove left margin
+            margin-top: 10px; // Add top margin for spacing
+        }
+
+        .navigation-list {
+            margin-top: 10px; // Add top margin for spacing
+            flex-direction: column; // Change to column layout for navigation items
+            align-items: center; // Center navigation items in column layout
+
+            .navigation-item a {
+                margin-right: 0; // Remove right margin for navigation items
+                margin-bottom: 10px; // Add bottom margin for spacing
+            }
+        }
+    }
+}
+
+// Media Query for iPad Air
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .containerNav {
+        .imglogo {
+            width: 100%; 
+            margin-left: 40px;
+        }
+
+        .lienNav {
+            margin-left: 0; 
+            margin-top: 10px; 
+        }
+
+        .navigation-list {
+            margin-top: 10px; 
+            flex-direction: column; 
+          margin-left: 25%;
+
+            .navigation-item a {
+                margin-right: 0; 
+                margin-bottom: 10px; 
+            }
+        }
+    }
+}
+.containerNav {
+   
+    width: 100%;
+    display: flex ;
+    background-color: rgb(251, 251, 252);
+
+.imglogo {
+width: 80%;
+}
+
+.lienNav {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.navigation-list {
+    display: flex;
+    list-style: none;
+    font-size:xx-large;
+.navigation-item a{
+    margin-right: 85px;
+    text-decoration: none;
+    
+}
+
+.navigation-item a:hover {
+    text-decoration: underline; 
+    color: crimson;
+ cursor: url('../media/tournevis.png'), pointer !important ;
+    }
+   }
+}
+
